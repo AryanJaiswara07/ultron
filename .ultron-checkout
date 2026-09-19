@@ -1,0 +1,8 @@
+ULTRON development-checkout marker.
+
+Presence of this file (together with next.config.ts and package.json) marks
+this directory as a development checkout: writable paths stay repo-local
+(data/, logs/, workspace/) and nothing requires migration.
+
+Installed deployments do not ship this file; there, writable paths resolve
+to platform user directories. Override either way with ULTRON_INSTALL_MODE.
